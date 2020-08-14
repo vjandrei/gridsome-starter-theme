@@ -25,6 +25,8 @@ With Gridsome offering a plugin-rich ecosystem, there are a few key plugins that
 
 - [Gridsome Source Filesystem](https://gridsome.org/plugins/gridsome-plugin-tailwindcss) Transform files into content that can be fetched with GraphQL in your components.
 
+- [Gridsome Source Static Meta](https://gridsome.org/plugins/gridsome-source-static-meta) This is a Gridsome source plugin that converts values in JSON and/or YAML files into keys on the global GraphQL metaData query.
+
 ### Install Gridsome CLI tool if you don't have
 
 `npm install --global @gridsome/cli`

@@ -1,0 +1,14 @@
+{
+  "menu": [
+    {
+      "name": "Home",
+      "link": "/",
+      "extranal": null
+    },
+    {
+      "name": "About",
+      "link": "/about",
+      "extranal": null
+    }
+  ]
+}

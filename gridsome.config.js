@@ -23,6 +23,12 @@ module.exports = {
         path: "./content/blog/**/*.md",
       },
     },
+    {
+      use: "gridsome-source-static-meta",
+      options: {
+        path: "settings/*.json",
+      },
+    },
   ],
   templates: {
     BlogPost: "/blog/:slug",
