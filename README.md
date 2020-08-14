@@ -23,6 +23,8 @@ With Gridsome offering a plugin-rich ecosystem, there are a few key plugins that
 
 - [Gridsome Tailwindcss](https://gridsome.org/plugins/gridsome-plugin-tailwindcss) This plugin will add Tailwind to your Gridsome project.
 
+- [Gridsome Source Filesystem](https://gridsome.org/plugins/gridsome-plugin-tailwindcss) Transform files into content that can be fetched with GraphQL in your components.
+
 ### Install Gridsome CLI tool if you don't have
 
 `npm install --global @gridsome/cli`

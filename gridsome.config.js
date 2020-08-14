@@ -5,16 +5,26 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: "Gridsome",
   plugins: [
     {
-      use: 'gridsome-plugin-tailwindcss',
+      use: "gridsome-plugin-tailwindcss",
       options: {
-        tailwindConfig: './tailwind.config.js',
+        tailwindConfig: "./tailwind.config.js",
         presetEnvConfig: {},
         shouldImport: true,
         shouldTimeTravel: true,
       },
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "BlogPost",
+        path: "./content/blog/**/*.md",
+      },
+    },
   ],
+  templates: {
+    BlogPost: "/blog/:slug",
+  },
 };
