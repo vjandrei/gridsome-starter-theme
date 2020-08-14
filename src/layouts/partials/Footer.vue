@@ -3,8 +3,7 @@
     <div>
       <p>
         © 2020 A starter template built with
-        <a href="https://www.gridsome.org">Gridsome.</a> - Template inspired by
-        <a href="https://github.com/noxify" target="_blank">Marcus Reinhardt</a>
+        <a href="https://www.gridsome.org">Gridsome.</a>
       </p>
 
       <ul>
