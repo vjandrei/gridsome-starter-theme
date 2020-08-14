@@ -31,8 +31,9 @@ With Gridsome offering a plugin-rich ecosystem, there are a few key plugins that
 
 `npm install --global @gridsome/cli`
 
-### 2. Run Gridsome site
+### 2. Create a Gridsome project
 
-1. `npm i` or `yarn install` to install node-modules
-2. `gridsome develop` to start a local dev server at `http://localhost:8080`
-3. Happy coding 🎉🙌
+1. `gridsome create my-blog https://github.com/vjandrei/gridsome-starter-theme` to install gridsome with this starter
+2. `cd my-blog` to open the folder
+3. `gridsome develop` to start a local dev server at `http://localhost:8080`
+4. Happy coding 🎉🙌
