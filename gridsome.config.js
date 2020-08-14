@@ -31,6 +31,11 @@ module.exports = {
     },
   ],
   templates: {
-    BlogPost: "/blog/:slug",
+    Blog: [
+      {
+        path: "/blog/:title",
+        component: "./src/templates/BlogEntry.vue",
+      },
+    ],
   },
 };
