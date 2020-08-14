@@ -7,6 +7,7 @@
           v-html="$page.blog.title"
         ></h1>
         <div class="text-sm md:text-base text-gray-600 flex justify-center">
+          <p class="author">{{ $page.blog.author.name }}</p>
           <p class="px-2">—</p>
           <time :datetime="$page.blog.datetime">{{ $page.blog.humanTime }}</time>
           <p class="px-2">—</p>
@@ -44,7 +45,7 @@
 
 <page-query>
   query($id: ID!) {
-    blogpost(id: $id) {
+    blog(id: $id) {
       title
       path
       image(width:1200)

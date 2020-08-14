@@ -19,9 +19,21 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        typeName: "BlogPost",
+        typeName: "Author",
+        path: "./content/author/*.md",
+      },
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "Blog",
         path: "./content/blog/**/*.md",
         refs: {
+          author: "Author",
+          tags: {
+            typeName: "Tag",
+            create: true,
+          },
           category: {
             typeName: "Category",
             create: true,
@@ -37,7 +49,7 @@ module.exports = {
     },
   ],
   templates: {
-    BlogPost: [
+    Blog: [
       {
         path: "/blog/:title",
         component: "./src/templates/BlogEntry.vue",
@@ -47,6 +59,12 @@ module.exports = {
       {
         path: "/category/:title",
         component: "./src/templates/Category.vue",
+      },
+    ],
+    Tag: [
+      {
+        path: "/tag/:title",
+        component: "./src/templates/Tag.vue",
       },
     ],
   },
