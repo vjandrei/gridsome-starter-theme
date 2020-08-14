@@ -10,7 +10,7 @@ This is the starter project for making awsome Gridsome sites.
 
 - Gridsome
 - Tailwindcss
-- SCSS
+- SCSS [Documentation](https://gridsome.org/docs/assets-css/#use-sass--css-pre-processors)
 - Markdown
 - Blog
 - Tags
@@ -20,6 +20,8 @@ This is the starter project for making awsome Gridsome sites.
 With Gridsome offering a plugin-rich ecosystem, there are a few key plugins that make this project possible.
 
 - [Gridsome Source Filesystem](https://gridsome.org/plugins/@gridsome/source-filesystem) Transform files into content that can be fetched with GraphQL in your components.
+
+- [Gridsome Tailwindcss](https://gridsome.org/plugins/gridsome-plugin-tailwindcss) This plugin will add Tailwind to your Gridsome project.
 
 ### Install Gridsome CLI tool if you don't have
 
