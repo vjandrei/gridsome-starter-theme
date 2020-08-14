@@ -57,9 +57,6 @@
         path
       }
     }
-
-
-    
   }
 </page-query>
 
