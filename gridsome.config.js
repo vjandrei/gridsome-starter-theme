@@ -21,6 +21,12 @@ module.exports = {
       options: {
         typeName: "BlogPost",
         path: "./content/blog/**/*.md",
+        refs: {
+          category: {
+            typeName: "Category",
+            create: true,
+          },
+        },
       },
     },
     {
@@ -31,10 +37,16 @@ module.exports = {
     },
   ],
   templates: {
-    Blog: [
+    BlogPost: [
       {
         path: "/blog/:title",
         component: "./src/templates/BlogEntry.vue",
+      },
+    ],
+    Category: [
+      {
+        path: "/category/:title",
+        component: "./src/templates/Category.vue",
       },
     ],
   },
