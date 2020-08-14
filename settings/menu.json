@@ -9,6 +9,11 @@
       "name": "About",
       "link": "/about",
       "extranal": null
+    },
+    {
+      "name": "Blog",
+      "link": "/blog",
+      "extranal": null
     }
   ]
 }

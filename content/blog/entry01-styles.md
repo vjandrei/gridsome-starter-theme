@@ -6,8 +6,8 @@ category: Design
 excerpt: Anxius nec ibimus utque illa circa video est fuit labores alas. Vincere ferociaarva.
 created: 2019-12-24
 image: ./images/andreas-koutsouko-nPgteZIje14-unsplash.jpg
-image_caption: Photo by Steven Wong on Unsplash
-author: author3
+image_caption: Photo by Andreas Koutsoukos on Unsplash
+author: author1
 ---
 
 # Heading 1
