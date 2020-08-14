@@ -1,33 +1,37 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <section id="container-centre" class="column centre flex-1">
+      <h1 class="page-title">Welcome to Skeleventy!</h1>
+      <div class="content">
+        <p>
+          A
+          <a href="https://www.gridsome.org">Gridsome</a> starter built with
+          <a href="https://tailwindcss.com">TailwindCSS</a>.
+        </p>
+        <h2 class="text-3xl">Features</h2>
+        <ul class="mb-12 list-disc pl-4">
+          <li>Build sites faster with the power of Gridsome, TailwindCSS and SCSS</li>
+          <li>Image lazyloading via gridsome builtin functionality</li>
+          <li>A simple blog with categories, tags and featured images</li>
+        </ul>
+        <h2 class="text-3xl">Credits</h2>
+        <p>
+          This template was built for
+          <a href="https://www.11ty.dev/docs/" target="_blank">Eleventy</a> by
+          <a href="https://github.com/josephdyer" target="_blank">Joseph Dyer</a>.
+        </p>
+      </div>
+    </section>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
-  }
-}
+    title: "Hello, world!",
+  },
+};
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
 </style>
