@@ -1,31 +1,38 @@
 <template>
   <Layout>
     <section>
-      <h1>Blog</h1>
+      <h1>Blog´s</h1>
       <div>
         <div v-for="entry in $page.allBlog.edges" :key="entry.node.id">
           <article>
             <g-link :to="entry.node.path">
               <figure>
-                <g-image class :alt="entry.node.image_caption" :src="entry.node.image" />
+                <g-image
+                  class
+                  :alt="entry.node.image_caption"
+                  :src="entry.node.image"
+                  width="50"
+                />
               </figure>
             </g-link>
-            <div>
+
+            <h1>
               Title:
-              <h2>
-                <g-link :to="entry.node.path">{{ entry.node.title }}</g-link>
-              </h2>
-              <div>
-                Author:
-                <p>{{ entry.node.author.name }}</p>
-                <time :datetime="entry.node.datetime">{{ entry.node.humanTime }}</time>
-              </div>Category
-              <ul>
-                <li>
-                  <span>{{ entry.node.category.title }}</span>
-                </li>
-              </ul>
-            </div>
+              <g-link :to="entry.node.path">{{ entry.node.title }}</g-link>
+            </h1>
+            <p>Author: {{ entry.node.author.name }}</p>
+            <p>
+              Time:
+              <time :datetime="entry.node.datetime">{{
+                entry.node.humanTime
+              }}</time>
+            </p>
+            Categories:
+            <ul>
+              <li>
+                <span>{{ entry.node.category.title }}</span>
+              </li>
+            </ul>
           </article>
         </div>
       </div>
@@ -36,7 +43,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Blog",
+    title: 'Blog',
   },
 };
 </script>

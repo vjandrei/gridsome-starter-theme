@@ -5,10 +5,14 @@
         <h1 v-html="$page.blog.title"></h1>
         <div>
           <p>{{ $page.blog.author.name }}</p>
-          <time :datetime="$page.blog.datetime">{{ $page.blog.humanTime }}</time>
+          <time :datetime="$page.blog.datetime">{{
+            $page.blog.humanTime
+          }}</time>
           <p>
             Posted in
-            <g-link :to="$page.blog.category.path">{{ $page.blog.category.title }}</g-link>
+            <g-link :to="$page.blog.category.path">{{
+              $page.blog.category.title
+            }}</g-link>
           </p>
         </div>
         <figure>
@@ -24,14 +28,13 @@
 
         <ul>
           <li v-for="tag in $page.blog.tags" :key="tag.id">
-            <g-link :to="tag.path">{{ tag.title}}</g-link>
+            <g-link :to="tag.path">{{ tag.title }}</g-link>
           </li>
         </ul>
       </div>
     </section>
   </Layout>
 </template>
-
 
 <page-query>
   query($id: ID!) {
